@@ -33,7 +33,7 @@ function verificar() {
   const tempoInicial = parseInt(localStorage.getItem('tempoInicial'));
   const tempoGasto = (tempoFinal - tempoInicial) / 1000;
 
-  resultado.textContent = `Parabéns! Você levou ${tempoGasto} segundos!`;
+  resultado.textContent = `Parabéns! Você levou ${tempoGasto.toFixed(2)} segundos!`;
 
   adicionarAoHistorico(texto.textContent, tempoGasto);
 
@@ -54,7 +54,7 @@ function iniciar() {
 function adicionarAoHistorico(textoDigitado, tempoGasto) {
   const itemHistorico = document.createElement('p');
 
-  itemHistorico.textContent = `Texto '${textoDigitado}' - Tempo: '${tempoGasto}' segundos.`
+  itemHistorico.textContent = `Texto '${textoDigitado}' - Tempo: '${tempoGasto.toFixed(2)}' segundos.`
 
   historico.appendChild(itemHistorico);
 }

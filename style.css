@@ -76,3 +76,31 @@ button:hover {
 .escuro #texto {
   color: #333;
 }
+
+.information {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.social {
+	width: 100%;
+	height: 50%;
+	display: flex;
+  font-size: 25px;
+	justify-content: center;
+	align-items: center;
+  margin-top: 220px;
+  gap: 70px;
+}
+
+.social a {
+	color: rgba(161, 161, 161, 0.6);
+	transition: color .5s;
+}
+
+.social a:hover {
+	color: rgb(113, 113, 113);
+}
